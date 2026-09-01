@@ -1,1 +1,11 @@
-# Z80ALL Rev1, Rev2, and Rev3 software
+### Software
+- Bootstrap ROM in CPLD, this 64-byte bootstrap can boot from serial or CF disk
+- [Simple ROM bootstrap](Software/z80all_rev1_rev2_software_simple_bootstrap_rev_0_1.zip), this 32-byte bootstrap always boot from CF disk
+- [Serial Loader](Software/z80all_serial_loader_r0_0.zip) resides in compact flash's Master Boot Record
+- [Z80ALL monitor](Software/z80all_software_monitor_r0_2.zip)
+- [SCMonitor+StarTrek](Software/Z80all_software_scmonitor_startrek.zip) This is Steve Cousin's SCMonitor ported to Z80ALL. This is Steve Cousin's homepage. As an extra bonus, it includes the StarTrek program in BASIC. To install SCMonitor+StarTrek, send scmonitor_startrek_z80all.hex to Z80ALL and type 'c1' to install it in track 0 of CF disk. Once it is installed, type 'b1' to load and run SCMonitor. To run Startrek in BASIC, type 'wbasic', then 'run'. Have fun!
+- CP/M 2.2 BIOS/CCP/BDOS
+- [CP/M3 Loader](Software/z80all_software_cpm3_loader.zip). This is loader for CP/M3. It expects CPM3.SYS in drive A of the CF disk. To install it, send CPM3LDR.HEX to Z80ALL and type 'c3' to install it in track 0 of CF disk. Once it is installed, type 'b3' to boot CP/M3.
+- [CPM3ALL](Software/z80all_software_cpm3all_distribution.zip). This is the CP/M 3 distribution files. Use unarj.com to decompress it.
+- CPM3 [banked BIOS](Software/z80all_software_cpm3_cbios_ldrbios_source.zip) source code, assembled with zmac
+- [CF image](Software/z80all_software_64mb_cpm2_cpm3_scmon_htc_zork.zip) file contains CP/M2.2, CP/M3, HiTech C, Zork, SCMonitor. Unzip to z80all_64MB_cpm2_cpm3_scmon_htc_zork.img and use Win32DiskImager to copy the image file to a 64MB or larger CF disk.
