@@ -41,7 +41,7 @@ The VGA interface is through a 4Kx8 dual port RAM. One side of the dual port RAM
 - Bootstrap ROM in CPLD, this 64-byte bootstrap can boot from serial or CF disk
 - [Simple ROM bootstrap](Software/z80all_rev1_rev2_software_simple_bootstrap_rev_0_1.zip), this 32-byte bootstrap always boot from CF disk
 - [Serial Loader](Software/z80all_serial_loader_r0_0.zip) resides in compact flash's Master Boot Record
-- Z80ALL monitor
+- [Z80ALL monitor](Software/z80all_software_monitor_r0_2.zip)
 - SCMonitor+StarTrek This is Steve Cousin's SCMonitor ported to Z80ALL. This is Steve Cousin's homepage. As an extra bonus, it includes the StarTrek program in BASIC. To install SCMonitor+StarTrek, send scmonitor_startrek_z80all.hex to Z80ALL and type 'c1' to install it in track 0 of CF disk. Once it is installed, type 'b1' to load and run SCMonitor. To run Startrek in BASIC, type 'wbasic', then 'run'. Have fun!
 - CP/M 2.2 BIOS/CCP/BDOS
 - CP/M3 Loader. This is loader for CP/M3. It expects CPM3.SYS in drive A of the CF disk. To install it, send CPM3LDR.HEX to Z80ALL and type 'c3' to install it in track 0 of CF disk. Once it is installed, type 'b3' to boot CP/M3.
