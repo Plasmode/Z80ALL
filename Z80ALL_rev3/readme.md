@@ -35,4 +35,4 @@ The VGA interface is through a 4Kx8 dual port RAM. One side of the dual port RAM
 - [Memory and I/O map](Memory_and_IO_Map.md)
 
 ### Software
-Z80ALL rev3 software is same as [Z80ALL rev2 software](../Z80ALL_rev1_rev2/Software)
+Z80ALL rev3 software is same as [Z80ALL rev1_rev2 software](../Z80ALL_rev1_rev2/Software)
