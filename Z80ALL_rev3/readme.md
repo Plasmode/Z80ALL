@@ -32,7 +32,7 @@ The VGA interface is through a 4Kx8 dual port RAM. One side of the dual port RAM
 - [Gerber photoplots](z80all_r3_gerber.zip)
 - [CPLD design](z80all_rev3pcb_cpld_84plcc_design_file.zip) files ← updated 4/2/24 to fix missing VGA connector pads in ground layer
 - Bill of Materials
-- Memory and I/O map
+- [Memory and I/O map](Memory_and_IO_Map.md)
 
 ### Software
 Z80ALL rev3 software is same as [Z80ALL rev2 software](../Z80ALL_rev1_rev2/Software)
