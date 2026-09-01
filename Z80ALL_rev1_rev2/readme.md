@@ -23,6 +23,7 @@ Z80ALL is my first attempt to build a standalone CP/M system. It is the combinat
 - Nominal power consumption of 5V 300mA
 - 
 ![rev1topanno](z80all_rev1_topview_annotated.jpg)
+
 ### Theory of Operation
 Z80ALL boots through the 32-byte ROM embedded in the CPLD which loads and executes code on compact flash's Master Boot Block; which, in turn, loads and executes a monitor located in Track 0 of compact flash; thus the CF disk serves as the traditional EPROM loading code into RAM and executing in RAM.
 
