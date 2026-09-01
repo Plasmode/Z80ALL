@@ -1,5 +1,6 @@
 # Rev1 Z80ALL
-Z80ALL is my first attempt to build a standalone CP/M system. It is the combination of two previous designs, ZRCC and VGARC. The goal is an economical Z80 SBC with VGA and PS2 keyboard on a 4“x4” 2-layer pc board.
+Z80ALL is my first attempt to build a standalone CP/M system. It is the combination of two previous designs, ZRCC and VGARC. The goal is an economical Z80 SBC with VGA and PS2 keyboard on a 4“x4” 2-layer pc board.  Rev1 is same as rev2 except rev1 is 2-layer pc board while rev2 is 4-layer pc board.
+
 ![rev1top](z80all_rev1_topview.jpg)
 
 d### Features
