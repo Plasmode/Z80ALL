@@ -10,11 +10,11 @@ Z80ALL rev3 is very similar to Z80ALL rev2 except the CPLD is redesigned in PLCC
 - VGA monochrome interface, 64 columns X 48 rows
 - Easy to assemble EPM7128S in PLCC84 package
 - EPM7128S CPLD with the following features
-- Small ROM to bootstrap from CF disk
-- VGA timing circuit
-- Serial port for hardware/software development
-- Memory bank select logic
-- Decoding logic for compact flash
+  - Small ROM to bootstrap from CF disk
+  - VGA timing circuit
+  - Serial port for hardware/software development
+  - Memory bank select logic
+  - Decoding logic for compact flash
 - IDE44 interface for compact flash drive
 - CP/M ready
 - PS2 keyboard interface
@@ -35,5 +35,4 @@ The VGA interface is through a 4Kx8 dual port RAM. One side of the dual port RAM
 - Memory and I/O map
 
 ### Software
-Z80ALL rev3 software is same as Z80ALL rev2 software
-
+Z80ALL rev3 software is same as [Z80ALL rev2 software](../Z80ALL_rev1_rev2/Software)
