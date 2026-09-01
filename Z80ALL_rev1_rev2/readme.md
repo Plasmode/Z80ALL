@@ -30,10 +30,11 @@ Z80ALL boots through the 32-byte ROM embedded in the CPLD which loads and execut
 The VGA interface is through a 4Kx8 dual port RAM. One side of the dual port RAM is read/write accessible by Z80 as 4K I/O space. 3K of the I/O space maps to each character of the 64×48 display; the top 1K is font lookup table for characters 0x0-0x7F. Z80 can read/write to its side of dual port RAM anytime without affecting video display quality. The other side of the dual port RAM is read only accessible by VGA timing circuit in CPLD. It reads each character and looks up corresponding font and output the pixel representation of the character on RGB output. This is a monochrome display.
 
 ### Design Information
-- Schematic
-- Gerber photoplots 11/17/23, Rev 1 PCB is updated. This is the link to Rev2 PCB. It is now a 4-layer PCB, but the design is the same.
-- CPLD design ← CPLD design is still evolving. This is an interim working design but without PS2 keyboard interface
-- Bill of Materials
+- [Schematic](z80all_rev1_rev2_scm.pdf)
+- [Rev1 Gerber photoplots](z80all_r1_gerber.zip), it is obsolete, replaced by rev 2 photoplots
+- [Rev2 Gerber photoplots](z80all_rev2_gerber.zip) 11/17/23, replacing rev1 photoplots <- same design as rev1 but it is now a 4-layer PCB.
+- [CPLD design](z80all_rev1pcb_cpld_design_file_64column_48line_no_ps2.zip) ← CPLD design is still evolving. This is an interim working design but without PS2 keyboard interface
+- [Bill of Materials](z80all_rev1_rev2_bom.pdf)
 - Memory and I/O Map
 
 ### Software
