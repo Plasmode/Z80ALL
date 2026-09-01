@@ -2,7 +2,7 @@
 Experimental version of Z80ALL
 Z80ALL is my first attempt to build a standalone CP/M system. It is the combination of two previous designs, ZRCC and VGARC. The goal is an economical Z80 SBC with VGA and PS2 keyboard on a 4“x4” 2-layer pc board.
 ![rev0top](z80all_rev0_topview_annotated.jpg)
-
+![rev0topview](z80all_rev0_topview.jpg)
 ### Features
 - Z80 overclocked to 25.175MHz
 - 128K RAM in 4 32-K banks
