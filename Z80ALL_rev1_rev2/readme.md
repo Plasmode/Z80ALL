@@ -35,12 +35,12 @@ The VGA interface is through a 4Kx8 dual port RAM. One side of the dual port RAM
 - [Rev2 Gerber photoplots](z80all_rev2_gerber.zip) 11/17/23, replacing rev1 photoplots <- same design as rev1 but it is now a 4-layer PCB.
 - [CPLD design](z80all_rev1pcb_cpld_design_file_64column_48line_no_ps2.zip) ← CPLD design is still evolving. This is an interim working design but without PS2 keyboard interface
 - [Bill of Materials](z80all_rev1_rev2_bom.pdf)
-- Memory and I/O Map
+- [Memory and I/O Map](Memory_and_IO_map.md)
 
 ### Software
 - Bootstrap ROM in CPLD, this 64-byte bootstrap can boot from serial or CF disk
-- Simple ROM bootstrap, this 32-byte bootstrap always boot from CF disk
-- Serial Loader resides in compact flash's Master Boot Record
+- [Simple ROM bootstrap](Software/z80all_rev1_rev2_software_simple_bootstrap_rev_0_1.zip), this 32-byte bootstrap always boot from CF disk
+- [Serial Loader](Software/z80all_serial_loader_r0_0.zip) resides in compact flash's Master Boot Record
 - Z80ALL monitor
 - SCMonitor+StarTrek This is Steve Cousin's SCMonitor ported to Z80ALL. This is Steve Cousin's homepage. As an extra bonus, it includes the StarTrek program in BASIC. To install SCMonitor+StarTrek, send scmonitor_startrek_z80all.hex to Z80ALL and type 'c1' to install it in track 0 of CF disk. Once it is installed, type 'b1' to load and run SCMonitor. To run Startrek in BASIC, type 'wbasic', then 'run'. Have fun!
 - CP/M 2.2 BIOS/CCP/BDOS
