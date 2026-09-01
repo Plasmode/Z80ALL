@@ -1,8 +1,8 @@
 # Z80ALL
 A complete Z80 CP/M SBC with VGA text video and PS2 keyboard on 4"x4" pc board
-[Rev0 Z80ALL](Z80ALL_Rev0) is obsolete
-[Rev1_Rev2 Z80ALL](Z80ALL_rev1_rev2) is the current version for CPLD in QFP100 package.
-[Rev3 Z80ALL](Z80ALL_rev3) is the current version for CPLD in PLCC84 package.
+- [Rev0 Z80ALL](Z80ALL_Rev0) is obsolete
+- [Rev1_Rev2 Z80ALL](Z80ALL_rev1_rev2) is the current version for CPLD in QFP100 package.
+- [Rev3 Z80ALL](Z80ALL_rev3) is the current version for CPLD in PLCC84 package.
 
 ![rev0](Z80ALL_Rev0/z80all_rev0_topview.jpg)
 ![rev1_rev2](Z80ALL_rev1_rev2/z80all_rev1_topview_annotated.jpg)
