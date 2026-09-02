@@ -51,8 +51,7 @@ VCC GND SCL SDA
 Please verify your display's signal assignment is the above order before plugging it in.
 
 
-lsdfjoir
-
+![badapple_OLED](z80all_with_KIORC_OLED_topview.jpg)
 
 downsize to 85×64 GIF. This is done using online tool at ezgif.com to resize BadApple to 85x64
 split to individual 85×64 frames. The online tool at ezgif.com can also split animated GIF to individual frames. There are 3109 frames in this zipped file.
@@ -65,7 +64,7 @@ This YouTube video shows BadApple playing on a 128×64 OLED display hosted on Z8
 ### Running BadApple on text-based VGA monitor
 Z80all’s VGA is 64×48 text mode only; 64×48 resolution is too low for most graphic applications. However, the fonts are programmable so 16 text characters (values 0x0-0xF) can be programmed to represent all permutations of 2×2 pixel array. This way the 64×48 resolution can be expanded to 128×96 which is sufficient to play BadApple in 128×96 resolution. The data file need to be preprocessed very similar to the 128×64 OLED example.
 
-luhkj;lkk
+![z80all_VGA_badapple](z80all_running_badapple_128x96_1stframe_vga_z80all.jpg)
 
 Downsize the original GIF file to 128x96 resolution using tools on ezgif.com.
 Split the GIF file into 3109 images of 128×96 resolution.
@@ -78,6 +77,6 @@ This YouTube video shows 50 seconds of BadApple playing on Z80all's VGA monitor.
 Game of Life on VGA with 128x96 Universe
 The default 64×48 VGA resolution is expanded to 128×96 by defining 16 set of fonts that represent all permutation of 2×2 sub-blocks. This enables Conway's Game of Life with an universe of 128×96 cells. This demonstration software is running Gosper Gun in 128×96 universe.
 
-
+![z80all_life](z80all_with_QuadSer_life_128x96_res.jpg)
 
 The original resolution of BadApple animated GIF is 360×270 in 4:3 aspect ratio but 128×64 OLED display is 2:1 aspect ratio. In order to keep the original aspect ratio, the image must be downsized to 85×64 resolution. Z80 also lacks the computation power to decode animated GIF and translate the image suitable to display on 128×64 OLED while keeping up the 20 frames/second video rate. The solution is to preprocess the original GIF file by
