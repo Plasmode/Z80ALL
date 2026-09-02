@@ -1,5 +1,6 @@
 # Z80ALL with KIORC or QuadSer
 **under construction, KIORC and Quadser boards need to be added into github repositories then linked here**
+
 Z80all is a standalone Z80 CP/M computer that operates either by itself or with a quad serial board or a KIORC board. Operating by itself without expansion board it accepts inputs from PS2 keyboard and sends output to VGA monitor but has no data link to the outside world. With installation of either quad serial board or KIORC board, it will auto-detect the plug-in board and accepts inputs from either serial port or PS2 keyboard and sends outputs to both serial port and video. With a serial board, data can be loaded into Z80all using Intel Hex loader or XMODEM.
 
 ![Z80all_KIORC_QuadSer](Z80all_with_KIORC_or_QuadSer.jpg)
@@ -27,11 +28,11 @@ These are the links of schematic, Gerber photoplots, bill of materials for Z80al
 
 - [CPLD design file for Z80all_rev1](../Z80ALL_rev1_rev2/z80all_rev1_2_standalone_60hz_irq_reverse_video.zip). Serial port function previously implemented in the CPLD is removed. PS2 controller is added. This CPLD design has no ability to do serial bootstrap and relies on CF disk to have the working software already installed. 60Hz interrupt added (2/18/2023)
 
-- Memory and I/O map for standalone Z80all
+- [Memory and I/O map](Memory_and_IO_Map.md) for standalone Z80all
 
-- Instruction for updating monitor for Z80all with KIORC
+- [Instruction](Update_KIO_instruction.md) for updating monitor for Z80all with KIORC
 
-- Bootstrap code in CPLD ROM that copies CF's master boot record to 0xB000 and jump to 0xB000
+- [Bootstrap code in CPLD ROM](Bootstrap_code_in_CPLD_ROM.md) that copies CF's master boot record to 0xB000 and jump to 0xB000
 
 - KIO serial loader is for Z80ALL with KIORC serial board. The program is loaded at 0xB000 and typically used to update new monitor
 
