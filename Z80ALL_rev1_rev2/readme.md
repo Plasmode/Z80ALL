@@ -33,7 +33,8 @@ The VGA interface is through a 4Kx8 dual port RAM. One side of the dual port RAM
 - [Schematic](z80all_rev1_rev2_scm.pdf)
 - [Rev1 Gerber photoplots](z80all_r1_gerber.zip), it is obsolete, replaced by rev 2 photoplots
 - [Rev2 Gerber photoplots](z80all_rev2_gerber.zip) 11/17/23, replacing rev1 photoplots <- same design as rev1 but it is now a 4-layer PCB.
-- [CPLD design](z80all_rev1pcb_cpld_design_file_64column_48line_no_ps2.zip) ← CPLD design is still evolving. This is an interim working design but without PS2 keyboard interface
+- [CPLD design](z80all_rev1pcb_cpld_design_file_64column_48line_no_ps2.zip) ← Obsolete CPLD design file. This is an interim working design but without PS2 keyboard interface.  
+- [CPLD design files](z80all_rev1_2_standalone_60hz_irq_reverse_video.zip) for Z80all_rev1. Serial port function previously implemented in the CPLD is removed. PS2 controller is added. This CPLD design has no ability to do serial bootstrap and relies on CF disk to have the working software already installed. 60Hz interrupt added (2/18/2023)
 - [Bill of Materials](z80all_rev1_rev2_bom.pdf)
 - [Memory and I/O Map](Memory_and_IO_map.md)
 
