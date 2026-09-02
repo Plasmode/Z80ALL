@@ -44,12 +44,13 @@ Monitor will auto-detect either quad serial board or KIORC board. It can also op
 BadApple is animated shadow-art that can run on monochrome display like 128×64 OLED display or Z80all's monochrome display. This section describes the process of getting BadApple to run on either I2C-based 128×64 OLED display or on Z80all's monochrome VGA display. The original data file for BadApple is this full-length animated GIF file. The subsequent sections describe how the original data file is downsized to fit the targeted display, stored on CF disk, and the player software to display the data.
 
 ### Running BadApple on 128x64 OLED display
-Please note, 128×64 OLED display may have different pin assignments. Z80ALL's I2C connector is hardwired to the following order of signals:
+**Please note**, 128×64 OLED display may have different pin assignments. Z80ALL's I2C connector is hardwired to the following order of signals:
 
 VCC GND SCL SDA
 
-Please verify your display's signal assignment is the above order before plugging it in.
+**Please verify your display's signal assignment is the above order before plugging it in.**
 
+The original resolution of BadApple animated GIF is 360×270 in 4:3 aspect ratio but 128×64 OLED display is 2:1 aspect ratio. In order to keep the original aspect ratio, the image must be downsized to 85×64 resolution. Z80 also lacks the computation power to decode animated GIF and translate the image suitable to display on 128×64 OLED while keeping up the 20 frames/second video rate. The solution is to preprocess the original GIF file by
 
 ![badapple_OLED](z80all_with_KIORC_OLED_topview.jpg)
 
@@ -59,7 +60,7 @@ Please verify your display's signal assignment is the above order before pluggin
 - Combine all frame sequentially into one contiguous file. Combining 3109 frames resulted in a large data file. EASy68K assembler is used to assemble it into Srecord and then into binary file with EASyBIN. The binary file is quite large, about 3.1meg.
 - Transfer the binary file to CF disk as one contiguous file. This is accomplished by first format drive D and then XMODEM the binary file to drive D. The 3.1meg file is stored starting from track 0xC0, sector 0x20.
 - Load and execute the BadApple player that reads the data from CF disk and output to OLED display at 20 frames/sec rate.
-This YouTube video shows BadApple playing on a 128×64 OLED display hosted on Z80all.
+This [YouTube video](https://www.youtube.com/watch?v=TfivnP7DpYc) shows BadApple playing on a 128×64 OLED display hosted on Z80all.
 
 ### Running BadApple on text-based VGA monitor
 Z80all’s VGA is 64×48 text mode only; 64×48 resolution is too low for most graphic applications. However, the fonts are programmable so 16 text characters (values 0x0-0xF) can be programmed to represent all permutations of 2×2 pixel array. This way the 64×48 resolution can be expanded to 128×96 which is sufficient to play BadApple in 128×96 resolution. The data file need to be preprocessed very similar to the 128×64 OLED example.
@@ -72,11 +73,11 @@ Z80all’s VGA is 64×48 text mode only; 64×48 resolution is too low for most g
 - Combine all frame sequentially into one contiguous file. Combining 3109 frames resulted in a large data file. EASy68K assembler is used to assemble it into Srecord and then into binary file with EASyBIN. The binary file is quite large, about 4.7meg.
 - Transfer the binary file to CF disk as one contiguous file. This is accomplished by first format drive D and then XMODEM the binary file to drive D. The 3.1meg file is stored starting from track 0xC0, sector 0x20.
 - Load and execute the BadApple player that reads the data from CF disk and output to VGA monitor at 20 frames/sec rate.
-This YouTube video shows 50 seconds of BadApple playing on Z80all's VGA monitor.
+This [YouTube video](https://www.youtube.com/watch?v=KYVQk8Nyg84) shows 50 seconds of BadApple playing on Z80all's VGA monitor.
 
 ### Game of Life on VGA with 128x96 Universe
 The default 64×48 VGA resolution is expanded to 128×96 by defining 16 set of fonts that represent all permutation of 2×2 sub-blocks. This enables Conway's Game of Life with an universe of 128×96 cells. This demonstration software is running Gosper Gun in 128×96 universe.
 
 ![z80all_life](z80all_with_QuadSer_life_128x96_res.jpg)
 
-The original resolution of BadApple animated GIF is 360×270 in 4:3 aspect ratio but 128×64 OLED display is 2:1 aspect ratio. In order to keep the original aspect ratio, the image must be downsized to 85×64 resolution. Z80 also lacks the computation power to decode animated GIF and translate the image suitable to display on 128×64 OLED while keeping up the 20 frames/second video rate. The solution is to preprocess the original GIF file by
+
