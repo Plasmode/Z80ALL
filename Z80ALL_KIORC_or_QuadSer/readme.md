@@ -53,12 +53,12 @@ Please verify your display's signal assignment is the above order before pluggin
 
 ![badapple_OLED](z80all_with_KIORC_OLED_topview.jpg)
 
-downsize to 85×64 GIF. This is done using online tool at ezgif.com to resize BadApple to 85x64
-split to individual 85×64 frames. The online tool at ezgif.com can also split animated GIF to individual frames. There are 3109 frames in this zipped file.
-convert each frame to data format for 128×64 OLED display. This is accomplished with online tool image2cpp by specifying 128×64 canvas size, plain bytes output format, and vertical - 1 bit per pixel draw mode.
-Combine all frame sequentially into one contiguous file. Combining 3109 frames resulted in a large data file. EASy68K assembler is used to assemble it into Srecord and then into binary file with EASyBIN. The binary file is quite large, about 3.1meg.
-Transfer the binary file to CF disk as one contiguous file. This is accomplished by first format drive D and then XMODEM the binary file to drive D. The 3.1meg file is stored starting from track 0xC0, sector 0x20.
-Load and execute the BadApple player that reads the data from CF disk and output to OLED display at 20 frames/sec rate.
+- downsize to 85×64 GIF. This is done using online tool at ezgif.com to resize BadApple to 85x64
+- split to individual 85×64 frames. The online tool at ezgif.com can also split animated GIF to individual frames. There are 3109 frames in this zipped file.
+- convert each frame to data format for 128×64 OLED display. This is accomplished with online tool image2cpp by specifying 128×64 canvas size, plain bytes output format, and vertical - 1 bit per pixel draw mode.
+- Combine all frame sequentially into one contiguous file. Combining 3109 frames resulted in a large data file. EASy68K assembler is used to assemble it into Srecord and then into binary file with EASyBIN. The binary file is quite large, about 3.1meg.
+- Transfer the binary file to CF disk as one contiguous file. This is accomplished by first format drive D and then XMODEM the binary file to drive D. The 3.1meg file is stored starting from track 0xC0, sector 0x20.
+- Load and execute the BadApple player that reads the data from CF disk and output to OLED display at 20 frames/sec rate.
 This YouTube video shows BadApple playing on a 128×64 OLED display hosted on Z80all.
 
 ### Running BadApple on text-based VGA monitor
@@ -66,12 +66,12 @@ Z80all’s VGA is 64×48 text mode only; 64×48 resolution is too low for most g
 
 ![z80all_VGA_badapple](z80all_running_badapple_128x96_1stframe_vga_z80all.jpg)
 
-Downsize the original GIF file to 128x96 resolution using tools on ezgif.com.
-Split the GIF file into 3109 images of 128×96 resolution.
-convert each frame to data format of 128×96 canvas size, plain bytes output format, and vertical -1 bit per pixel draw mode.
-Combine all frame sequentially into one contiguous file. Combining 3109 frames resulted in a large data file. EASy68K assembler is used to assemble it into Srecord and then into binary file with EASyBIN. The binary file is quite large, about 4.7meg.
-Transfer the binary file to CF disk as one contiguous file. This is accomplished by first format drive D and then XMODEM the binary file to drive D. The 3.1meg file is stored starting from track 0xC0, sector 0x20.
-Load and execute the BadApple player that reads the data from CF disk and output to VGA monitor at 20 frames/sec rate.
+- Downsize the original GIF file to 128x96 resolution using tools on ezgif.com.
+- Split the GIF file into 3109 images of 128×96 resolution.
+- convert each frame to data format of 128×96 canvas size, plain bytes output format, and vertical -1 bit per pixel draw mode.
+- Combine all frame sequentially into one contiguous file. Combining 3109 frames resulted in a large data file. EASy68K assembler is used to assemble it into Srecord and then into binary file with EASyBIN. The binary file is quite large, about 4.7meg.
+- Transfer the binary file to CF disk as one contiguous file. This is accomplished by first format drive D and then XMODEM the binary file to drive D. The 3.1meg file is stored starting from track 0xC0, sector 0x20.
+- Load and execute the BadApple player that reads the data from CF disk and output to VGA monitor at 20 frames/sec rate.
 This YouTube video shows 50 seconds of BadApple playing on Z80all's VGA monitor.
 
 ### Game of Life on VGA with 128x96 Universe
