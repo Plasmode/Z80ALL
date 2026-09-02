@@ -74,7 +74,7 @@ Transfer the binary file to CF disk as one contiguous file. This is accomplished
 Load and execute the BadApple player that reads the data from CF disk and output to VGA monitor at 20 frames/sec rate.
 This YouTube video shows 50 seconds of BadApple playing on Z80all's VGA monitor.
 
-Game of Life on VGA with 128x96 Universe
+### Game of Life on VGA with 128x96 Universe
 The default 64×48 VGA resolution is expanded to 128×96 by defining 16 set of fonts that represent all permutation of 2×2 sub-blocks. This enables Conway's Game of Life with an universe of 128×96 cells. This demonstration software is running Gosper Gun in 128×96 universe.
 
 ![z80all_life](z80all_with_QuadSer_life_128x96_res.jpg)
