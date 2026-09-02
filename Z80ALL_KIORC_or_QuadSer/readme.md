@@ -24,7 +24,7 @@ Z80all is a standalone Z80 CP/M computer that operates either by itself or with 
 ### Design Files
 These are the links of schematic, Gerber photoplots, bill of materials for Z80all rev1, and Quadser board, and KIORC board.
 
-- CPLD design file for Z80all_rev1. Serial port function previously implemented in the CPLD is removed. PS2 controller is added. This CPLD design has no ability to do serial bootstrap and relies on CF disk to have the working software already installed. 60Hz interrupt added (2/18/2023)
+- [CPLD design file for Z80all_rev1](../Z80ALL_rev1_rev2/z80all_rev1_2_standalone_60hz_irq_reverse_video.zip). Serial port function previously implemented in the CPLD is removed. PS2 controller is added. This CPLD design has no ability to do serial bootstrap and relies on CF disk to have the working software already installed. 60Hz interrupt added (2/18/2023)
 
 - Memory and I/O map for standalone Z80all
 
