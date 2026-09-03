@@ -43,7 +43,7 @@ Monitor will auto-detect either quad serial board or KIORC board. It can also op
 - [CP/M2.2](software/cpm2_r1_3_require_quadser.zip)
 - [CF image](software/z80all_kq_vga0x0_cpm1_8_monitor091.zip) for Z80all + Quad serial board
 ### BadApple!! Demo on Z80all
-BadApple is animated shadow-art that can run on monochrome display like 128×64 OLED display or Z80all's monochrome display. This section describes the process of getting BadApple to run on either I2C-based 128×64 OLED display or on Z80all's monochrome VGA display. The original data file for BadApple is this full-length animated GIF file. The subsequent sections describe how the original data file is downsized to fit the targeted display, stored on CF disk, and the player software to display the data.
+BadApple is animated shadow-art that can run on monochrome display like 128×64 OLED display or Z80all's monochrome display. This section describes the process of getting BadApple to run on either I2C-based 128×64 OLED display or on Z80all's monochrome VGA display. The original data file for BadApple is this [full-length animated GIF](software/bad.apple.full.360x270.gif) file. The subsequent sections describe how the original data file is downsized to fit the targeted display, stored on CF disk, and the player software to display the data.
 
 ### Running BadApple on 128x64 OLED display
 **Please note**, 128×64 OLED display may have different pin assignments. Z80ALL's I2C connector is hardwired to the following order of signals:
