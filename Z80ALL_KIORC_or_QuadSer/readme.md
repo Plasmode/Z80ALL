@@ -56,7 +56,7 @@ The original resolution of BadApple animated GIF is 360×270 in 4:3 aspect ratio
 
 ![badapple_OLED](z80all_with_KIORC_OLED_topview.jpg)
 
-1. downsize to 85×64 GIF. This is done using online tool at ezgif.com to resize BadApple to 85x64
+1. downsize to 85×64 GIF. This is done using online tool at ezgif.com to [resize BadApple to 85x64](software/ezgif.com-badapple_85x64.gif)
 2. split to individual 85×64 frames. The online tool at ezgif.com can also split animated GIF to individual frames. There are [3109 frames](software/badapple_85x64_full_length.zip) in this zipped file.
 3. convert each frame to data format for 128×64 OLED display. This is accomplished with online tool [image2cpp](https://javl.github.io/image2cpp/) by specifying 128×64 canvas size, plain bytes output format, and vertical - 1 bit per pixel draw mode.
 4. Combine all frame sequentially into one contiguous file. Combining 3109 frames resulted in a large data file. EASy68K assembler is used to assemble it into Srecord and then into [binary fil](software/badapple85x64_3109_binary_images.zip) with EASyBIN. The binary file is quite large, about 3.1meg.
@@ -69,7 +69,7 @@ Z80all’s VGA is 64×48 text mode only; 64×48 resolution is too low for most g
 
 ![z80all_VGA_badapple](z80all_running_badapple_128x96_1stframe_vga_z80all.jpg)
 
-1. Downsize the original GIF file to 128x96 resolution using tools on ezgif.com.
+1. Downsize the original GIF file to [128x96 resolution](software/badapple_128_96_resized.gif) using tools on ezgif.com.
 2. Split the GIF file into [3109 images](software/ezgif-badapple_128x96_3109_images.zip) of 128×96 resolution.
 3. convert each frame to data format of 128×96 canvas size, plain bytes output format, and vertical -1 bit per pixel draw mode.
 4. Combine all frame sequentially into one contiguous file. Combining 3109 frames resulted in a large data file. EASy68K assembler is used to assemble it into Srecord and then into [binary file](software/badapple_128x96_3109_binary_images.zip) with EASyBIN. The binary file is quite large, about 4.7meg.
