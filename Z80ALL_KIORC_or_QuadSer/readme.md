@@ -57,11 +57,11 @@ The original resolution of BadApple animated GIF is 360×270 in 4:3 aspect ratio
 ![badapple_OLED](z80all_with_KIORC_OLED_topview.jpg)
 
 1. downsize to 85×64 GIF. This is done using online tool at ezgif.com to resize BadApple to 85x64
-2. split to individual 85×64 frames. The online tool at ezgif.com can also split animated GIF to individual frames. There are 3109 frames in this zipped file.
-3. convert each frame to data format for 128×64 OLED display. This is accomplished with online tool image2cpp by specifying 128×64 canvas size, plain bytes output format, and vertical - 1 bit per pixel draw mode.
-4. Combine all frame sequentially into one contiguous file. Combining 3109 frames resulted in a large data file. EASy68K assembler is used to assemble it into Srecord and then into binary file with EASyBIN. The binary file is quite large, about 3.1meg.
+2. split to individual 85×64 frames. The online tool at ezgif.com can also split animated GIF to individual frames. There are [3109 frames](software/badapple_85x64_full_length.zip) in this zipped file.
+3. convert each frame to data format for 128×64 OLED display. This is accomplished with online tool [image2cpp](https://javl.github.io/image2cpp/) by specifying 128×64 canvas size, plain bytes output format, and vertical - 1 bit per pixel draw mode.
+4. Combine all frame sequentially into one contiguous file. Combining 3109 frames resulted in a large data file. EASy68K assembler is used to assemble it into Srecord and then into [binary fil](software/badapple85x64_3109_binary_images.zip) with EASyBIN. The binary file is quite large, about 3.1meg.
 5. Transfer the binary file to CF disk as one contiguous file. This is accomplished by first format drive D and then XMODEM the binary file to drive D. The 3.1meg file is stored starting from track 0xC0, sector 0x20.
-6. Load and execute the BadApple player that reads the data from CF disk and output to OLED display at 20 frames/sec rate.
+6. Load and execute the [BadApple player](software/badapple_i2c_128x64oled_player.zip) that reads the data from CF disk and output to OLED display at 20 frames/sec rate.
 This [YouTube video](https://www.youtube.com/watch?v=TfivnP7DpYc) shows BadApple playing on a 128×64 OLED display hosted on Z80all.
 
 ### Running BadApple on text-based VGA monitor
