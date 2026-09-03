@@ -70,15 +70,15 @@ Z80all’s VGA is 64×48 text mode only; 64×48 resolution is too low for most g
 ![z80all_VGA_badapple](z80all_running_badapple_128x96_1stframe_vga_z80all.jpg)
 
 1. Downsize the original GIF file to 128x96 resolution using tools on ezgif.com.
-2. Split the GIF file into 3109 images of 128×96 resolution.
+2. Split the GIF file into [3109 images](software/ezgif-badapple_128x96_3109_images.zip) of 128×96 resolution.
 3. convert each frame to data format of 128×96 canvas size, plain bytes output format, and vertical -1 bit per pixel draw mode.
-4. Combine all frame sequentially into one contiguous file. Combining 3109 frames resulted in a large data file. EASy68K assembler is used to assemble it into Srecord and then into binary file with EASyBIN. The binary file is quite large, about 4.7meg.
+4. Combine all frame sequentially into one contiguous file. Combining 3109 frames resulted in a large data file. EASy68K assembler is used to assemble it into Srecord and then into [binary file](software/badapple_128x96_3109_binary_images.zip) with EASyBIN. The binary file is quite large, about 4.7meg.
 5. Transfer the binary file to CF disk as one contiguous file. This is accomplished by first format drive D and then XMODEM the binary file to drive D. The 3.1meg file is stored starting from track 0xC0, sector 0x20.
-6. Load and execute the BadApple player that reads the data from CF disk and output to VGA monitor at 20 frames/sec rate.
+6. Load and execute the [BadApple player](software/badapple_player_for_128x96_vga.zip) that reads the data from CF disk and output to VGA monitor at 20 frames/sec rate.
 This [YouTube video](https://www.youtube.com/watch?v=KYVQk8Nyg84) shows 50 seconds of BadApple playing on Z80all's VGA monitor.
 
 ### Game of Life on VGA with 128x96 Universe
-The default 64×48 VGA resolution is expanded to 128×96 by defining 16 set of fonts that represent all permutation of 2×2 sub-blocks. This enables Conway's Game of Life with an universe of 128×96 cells. This demonstration software is running Gosper Gun in 128×96 universe.
+The default 64×48 VGA resolution is expanded to 128×96 by defining 16 set of fonts that represent all permutation of 2×2 sub-blocks. This enables Conway's Game of Life with an universe of 128×96 cells. This [demonstration software](software/z80all_software_life_on_vga_128x96universe.zip) is running Gosper Gun in 128×96 universe.
 
 ![z80all_life](z80all_with_QuadSer_life_128x96_res.jpg)
 
